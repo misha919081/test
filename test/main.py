@@ -8,7 +8,7 @@ class countingWorker(QtCore.QObject):
 
     # explicit slot that takes input from the start_counting_signal
     @QtCore.pyqtSlot(int, str)
-    def startCounting(self, boxNumber,):
+    def startCounting(self, boxNumber):
         value = int()
         while True:
             value = 1 + value
